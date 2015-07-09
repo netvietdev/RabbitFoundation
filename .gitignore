@@ -1,0 +1,10 @@
+﻿################################################################################
+# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
+################################################################################
+
+/Rabbit.Foundation/bin
+/Rabbit.Foundation/obj
+/Packages/NuGet.Rabbit.Foundation/obj
+/Packages/NuGet.Rabbit.Foundation/bin/Release
+*.suo
+*.log
