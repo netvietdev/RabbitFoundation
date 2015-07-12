@@ -6,18 +6,17 @@ namespace Rabbit.Foundation.List
     /// <summary>
     /// SmartList provides a way to perform validation logic before adding/removing items from the list.
     /// </summary>
-    /// <typeparam name="T"></typeparam>
-    public class SmartSmartList<T> : ISmartList<T>
+    public class SmartList<T> : ISmartList<T>
     {
-        private readonly ISmartListValidator _validator;
+        private readonly ISmartListValidator<T> _validator;
         private readonly List<T> _items;
 
-        public SmartSmartList()
-            : this(new DefaultSmartListValidator())
+        public SmartList()
+            : this(new DefaultSmartListValidator<T>())
         {
         }
 
-        public SmartSmartList(ISmartListValidator validator)
+        public SmartList(ISmartListValidator<T> validator)
         {
             _validator = validator;
             _items = new List<T>();
@@ -30,11 +29,52 @@ namespace Rabbit.Foundation.List
             _items.Add(item);
         }
 
+        public void Insert(int index, T item)
+        {
+            _validator.OnBeforeAdd(this, item);
+
+            _items.Insert(index, item);
+        }
+
         public void Remove(T item)
         {
             _validator.OnReforeRemove(this, item);
 
             _items.Remove(item);
+        }
+
+        public T RemoveAt(int index)
+        {
+            var item = _items[index];
+
+            _validator.OnReforeRemove(this, item);
+            _items.RemoveAt(index);
+
+            return item;
+        }
+
+        public void MoveUp(T item)
+        {
+            var index = _items.IndexOf(item);
+            if (index <= 0)
+            {
+                return;
+            }
+
+            _items.RemoveAt(index);
+            _items.Insert(index - 1, item);
+        }
+
+        public void MoveDown(T item)
+        {
+            var index = _items.IndexOf(item);
+            if (index >= _items.Count - 1)
+            {
+                return;
+            }
+
+            _items.RemoveAt(index);
+            _items.Insert(index, item);
         }
 
         public T this[int index]

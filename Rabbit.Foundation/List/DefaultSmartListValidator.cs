@@ -1,12 +1,25 @@
-﻿namespace Rabbit.Foundation.List
+﻿using System.Collections.Generic;
+
+namespace Rabbit.Foundation.List
 {
-    public class DefaultSmartListValidator : ISmartListValidator
+    public class DefaultSmartListValidator<T> : ISmartListValidator<T>
     {
-        public virtual void OnBeforeAdd<T>(ISmartList<T> list, T item)
+        protected readonly IEqualityComparer<T> Comparer;
+
+        public DefaultSmartListValidator()
         {
         }
 
-        public virtual void OnReforeRemove<T>(ISmartList<T> list, T item)
+        public DefaultSmartListValidator(IEqualityComparer<T> comparer)
+        {
+            Comparer = comparer;
+        }
+
+        public virtual void OnBeforeAdd(ISmartList<T> list, T item)
+        {
+        }
+
+        public virtual void OnReforeRemove(ISmartList<T> list, T item)
         {
         }
     }

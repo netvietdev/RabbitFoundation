@@ -38,6 +38,7 @@
     <Compile Include="List\DefaultSmartListValidator.cs" />
     <Compile Include="List\ISmartList.cs" />
     <Compile Include="List\ISmartListValidator.cs" />
+    <Compile Include="List\UniqueListValidator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="List\SmartList.cs" />
   </ItemGroup>
