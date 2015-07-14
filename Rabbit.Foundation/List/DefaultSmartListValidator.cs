@@ -4,9 +4,10 @@ namespace Rabbit.Foundation.List
 {
     public class DefaultSmartListValidator<T> : ISmartListValidator<T>
     {
-        protected readonly IEqualityComparer<T> Comparer;
+        protected IEqualityComparer<T> Comparer { get; private set; }
 
         public DefaultSmartListValidator()
+            : this(EqualityComparer<T>.Default)
         {
         }
 
@@ -19,7 +20,7 @@ namespace Rabbit.Foundation.List
         {
         }
 
-        public virtual void OnReforeRemove(ISmartList<T> list, T item)
+        public virtual void OnBeforeRemove(ISmartList<T> list, T item)
         {
         }
     }

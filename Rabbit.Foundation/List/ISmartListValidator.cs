@@ -10,6 +10,6 @@
         /// <summary>
         /// Performs validation tasks before removing item from list
         /// </summary>
-        void OnReforeRemove(ISmartList<T> list, T item);
+        void OnBeforeRemove(ISmartList<T> list, T item);
     }
 }

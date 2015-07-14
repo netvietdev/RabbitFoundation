@@ -1,11 +1,13 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 
 namespace Rabbit.Foundation.List
 {
     /// <summary>
     /// SmartList provides a way to perform validation logic before adding/removing items from the list.
     /// </summary>
+    [SuppressMessage("Microsoft.Naming", "CA1710", Justification = "Do not need to have Collection at the end")]
     public class SmartList<T> : ISmartList<T>
     {
         private readonly ISmartListValidator<T> _validator;
@@ -38,7 +40,7 @@ namespace Rabbit.Foundation.List
 
         public void Remove(T item)
         {
-            _validator.OnReforeRemove(this, item);
+            _validator.OnBeforeRemove(this, item);
 
             _items.Remove(item);
         }
@@ -47,7 +49,7 @@ namespace Rabbit.Foundation.List
         {
             var item = _items[index];
 
-            _validator.OnReforeRemove(this, item);
+            _validator.OnBeforeRemove(this, item);
             _items.RemoveAt(index);
 
             return item;

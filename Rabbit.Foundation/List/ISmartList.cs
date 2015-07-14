@@ -1,7 +1,9 @@
 ﻿using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 
 namespace Rabbit.Foundation.List
 {
+    [SuppressMessage("Microsoft.Naming", "CA1710", Justification = "Do not need to have Collection at the end")]
     public interface ISmartList<T> : IReadOnlyList<T>
     {
         /// <summary>
