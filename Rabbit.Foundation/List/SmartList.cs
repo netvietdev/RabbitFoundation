@@ -36,21 +36,60 @@ namespace Rabbit.Foundation.List
             _items.Insert(index, item);
         }
 
-        public void Remove(T item)
+        public bool Remove(T item)
         {
-            _validator.OnReforeRemove(this, item);
-
-            _items.Remove(item);
+            return _items.Remove(item);
         }
 
-        public T RemoveAt(int index)
+        public T this[int index]
         {
-            var item = _items[index];
+            get { return _items[index]; }
+            set { _items[index] = value; }
+        }
 
-            _validator.OnReforeRemove(this, item);
+        public int Count
+        {
+            get { return _items.Count; }
+        }
+
+        public IEnumerator<T> GetEnumerator()
+        {
+            return _items.GetEnumerator();
+        }
+
+        IEnumerator IEnumerable.GetEnumerator()
+        {
+            return _items.GetEnumerator();
+        }
+
+        public int IndexOf(T item)
+        {
+            return _items.IndexOf(item);
+        }
+
+        public void RemoveAt(int index)
+        {
             _items.RemoveAt(index);
+        }
 
-            return item;
+        public void Clear()
+        {
+            _items.Clear();
+        }
+
+        public bool Contains(T item)
+        {
+            return _items.Contains(item);
+        }
+
+        public void CopyTo(T[] array, int arrayIndex)
+        {
+            throw new System.NotImplementedException();
+        }
+
+        public bool IsReadOnly
+        {
+            get { return false; }
         }
 
         public void MoveUp(T item)
@@ -75,26 +114,6 @@ namespace Rabbit.Foundation.List
 
             _items.RemoveAt(index);
             _items.Insert(index, item);
-        }
-
-        public T this[int index]
-        {
-            get { return _items[index]; }
-        }
-
-        public int Count
-        {
-            get { return _items.Count; }
-        }
-
-        public IEnumerator<T> GetEnumerator()
-        {
-            return _items.GetEnumerator();
-        }
-
-        IEnumerator IEnumerable.GetEnumerator()
-        {
-            return _items.GetEnumerator();
         }
     }
 }
