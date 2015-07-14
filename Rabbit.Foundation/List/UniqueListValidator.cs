@@ -17,9 +17,7 @@ namespace Rabbit.Foundation.List
 
         public override void OnBeforeAdd(ISmartList<T> list, T item)
         {
-            var isContained = (Comparer == null) ? list.Contains(item) : list.Contains(item, Comparer);
-
-            if (isContained)
+            if (list.Contains(item, Comparer))
             {
                 throw new ArgumentException("Item already exists", "item");
             }

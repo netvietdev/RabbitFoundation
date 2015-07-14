@@ -2,11 +2,14 @@
 <package >
   <metadata>
     <id>Rabbit.Foundation</id>
-    <version>1.3.0</version>
+    <version>1.3.1</version>
     <title>Rabbit.Foundation</title>
     <authors>RabbitSoftware</authors>
     <owners>juniho</owners>
     <description>
+      Version 1.3.1
+      * ISmartList inherits from IList
+      * Fix DefaultSmartListValidator / Code Analysis issues
       Version 1.3.0
       * Add MoveUp/MoveDown on SmartList
       Version 1.2.0

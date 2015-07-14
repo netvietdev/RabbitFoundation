@@ -1,8 +1,10 @@
 ﻿using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 
 namespace Rabbit.Foundation.List
 {
-    public interface ISmartList<T> : IList<T>
+	[SuppressMessage("Microsoft.Naming", "CA1710", Justification = "Do not need to have Collection at the end")]    
+	public interface ISmartList<T> : IList<T>
     {
         /// <summary>
         /// Move item up one position
