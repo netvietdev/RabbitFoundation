@@ -11,17 +11,27 @@ namespace Rabbit.Foundation.List
     public class SmartList<T> : ISmartList<T>
     {
         private readonly ISmartListValidator<T> _validator;
-        private readonly List<T> _items;
+        private readonly IList<T> _items;
 
         public SmartList()
-            : this(new DefaultSmartListValidator<T>())
+            : this(new T[] { }, new DefaultSmartListValidator<T>())
+        {
+        }
+
+        public SmartList(IList<T> items)
+            : this(items, new DefaultSmartListValidator<T>())
         {
         }
 
         public SmartList(ISmartListValidator<T> validator)
+            : this(new T[] { }, validator)
         {
+        }
+
+        public SmartList(IList<T> items, ISmartListValidator<T> validator)
+        {
+            _items = items;
             _validator = validator;
-            _items = new List<T>();
         }
 
         public void Add(T item)
