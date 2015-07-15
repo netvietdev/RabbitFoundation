@@ -1,29 +1,11 @@
 ﻿using System.Collections.Generic;
+using System.Diagnostics.CodeAnalysis;
 
 namespace Rabbit.Foundation.List
 {
+    [SuppressMessage("Microsoft.Naming", "CA1710", Justification = "Do not need to be ended with Collection on a list type")]
     public interface ISmartList<T> : IReadOnlyList<T>
     {
-        /// <summary>
-        /// Adds an item to the list
-        /// </summary>
-        void Add(T item);
-
-        /// <summary>
-        /// Inserts an item to the list at the specified index.
-        /// </summary>
-        void Insert(int index, T item);
-
-        /// <summary>
-        /// Removes the first occurrence of a specific object from the list
-        /// </summary>
-        void Remove(T item);
-
-        /// <summary>
-        /// Removes the item at the specified index from the list, returns removed item.
-        /// </summary>
-        T RemoveAt(int index);
-
         /// <summary>
         /// Move item up one position
         /// </summary>
@@ -33,5 +15,24 @@ namespace Rabbit.Foundation.List
         /// Move item down one position
         /// </summary>
         void MoveDown(T item);
+
+        /// <summary>
+        ///  Returns a read-only collection.
+        /// </summary>
+        IReadOnlyCollection<T> AsReadOnly();
+
+        int IndexOf(T item);
+
+        void Insert(int index, T item);
+
+        void Add(T item);
+
+        void Clear();
+
+        bool Contains(T item);
+
+        bool Remove(T item);
+
+        T RemoveAt(int index);
     }
 }
