@@ -52,6 +52,8 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="List\SmartListTest.Clear.cs" />
+    <Compile Include="List\SmartListTest.Contains.cs" />
     <Compile Include="List\SmartListTest.MoveUp.cs" />
     <Compile Include="List\SmartListTest.RemoveAt.cs" />
     <Compile Include="List\SmartListTest.Insert.cs" />

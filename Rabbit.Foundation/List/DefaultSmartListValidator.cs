@@ -4,7 +4,11 @@ namespace Rabbit.Foundation.List
 {
     public class DefaultSmartListValidator<T> : ISmartListValidator<T>
     {
-        protected IEqualityComparer<T> Comparer { get; private set; }
+        protected IEqualityComparer<T> Comparer
+        {
+            get;
+            private set;
+        }
 
         public DefaultSmartListValidator()
             : this(EqualityComparer<T>.Default)
