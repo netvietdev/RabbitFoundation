@@ -9,10 +9,32 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NuGet.Rabbit.Foundation", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rabbit.Foundation.Tests", "Rabbit.Foundation.Tests\Rabbit.Foundation.Tests.csproj", "{375507A9-8417-46BC-9C1A-99163D7CF310}"
 EndProject
-Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{20DCB13F-4EA7-49E4-820E-6E5E3FE2FD5A}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Tests", "Tests", "{246CC49E-8976-46E7-9DC5-67F51FB7D112}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rabbit.Net", "Rabbit.Net\Rabbit.Net.csproj", "{D77F98BE-2D96-4B2F-B25C-3C4BFDED83B8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rabbit.Web", "Rabbit.Web\Rabbit.Web.csproj", "{24C4DAFF-D47C-47C4-9F23-5F98D62FC2B4}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rabbit.Web.Mvc", "Rabbit.Web.Mvc\Rabbit.Web.Mvc.csproj", "{118D8E35-EE18-406F-A70D-6CC80CE93A3F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{47F30EBB-436D-4205-AED7-E60F9E6F5585}"
 	ProjectSection(SolutionItems) = preProject
-		Versions.txt = Versions.txt
+		.nuget\NuGet.Config = .nuget\NuGet.Config
+		.nuget\NuGet.exe = .nuget\NuGet.exe
+		.nuget\NuGet.targets = .nuget\NuGet.targets
 	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Samples.CustomFilters", "Samples\Samples.CustomFilters\Samples.CustomFilters.csproj", "{A3D69928-4AC5-4C7F-8AB3-C16508EAA9C2}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Samples", "Samples", "{430667F5-620C-4770-BA34-CC9D5164D421}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Samples.CookieThreadCulture", "Samples\Samples.CookieThreadCulture\Samples.CookieThreadCulture.csproj", "{26B311DB-D915-4F82-9838-B9F2AD64237A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NuGet.Rabbit.Web", "Packages\NuGet.Rabbit.Web\NuGet.Rabbit.Web.csproj", "{00209156-F997-40ED-A1BA-3DD3F18C6C42}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NuGet.Rabbit.Web.Mvc", "Packages\NuGet.Rabbit.Web.Mvc\NuGet.Rabbit.Web.Mvc.csproj", "{883D5E9E-B172-4DF2-A69D-02B2806E1A70}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NuGet.Rabbit.Net", "Packages\NuGet.Rabbit.Net\NuGet.Rabbit.Net.csproj", "{6792C4D8-52DE-4C42-9513-ED9E322AA6D2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -32,11 +54,49 @@ Global
 		{375507A9-8417-46BC-9C1A-99163D7CF310}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{375507A9-8417-46BC-9C1A-99163D7CF310}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{375507A9-8417-46BC-9C1A-99163D7CF310}.Release|Any CPU.Build.0 = Release|Any CPU
+		{D77F98BE-2D96-4B2F-B25C-3C4BFDED83B8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D77F98BE-2D96-4B2F-B25C-3C4BFDED83B8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D77F98BE-2D96-4B2F-B25C-3C4BFDED83B8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D77F98BE-2D96-4B2F-B25C-3C4BFDED83B8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24C4DAFF-D47C-47C4-9F23-5F98D62FC2B4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24C4DAFF-D47C-47C4-9F23-5F98D62FC2B4}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24C4DAFF-D47C-47C4-9F23-5F98D62FC2B4}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24C4DAFF-D47C-47C4-9F23-5F98D62FC2B4}.Release|Any CPU.Build.0 = Release|Any CPU
+		{118D8E35-EE18-406F-A70D-6CC80CE93A3F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{118D8E35-EE18-406F-A70D-6CC80CE93A3F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{118D8E35-EE18-406F-A70D-6CC80CE93A3F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{118D8E35-EE18-406F-A70D-6CC80CE93A3F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A3D69928-4AC5-4C7F-8AB3-C16508EAA9C2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A3D69928-4AC5-4C7F-8AB3-C16508EAA9C2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A3D69928-4AC5-4C7F-8AB3-C16508EAA9C2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A3D69928-4AC5-4C7F-8AB3-C16508EAA9C2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26B311DB-D915-4F82-9838-B9F2AD64237A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26B311DB-D915-4F82-9838-B9F2AD64237A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26B311DB-D915-4F82-9838-B9F2AD64237A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26B311DB-D915-4F82-9838-B9F2AD64237A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{00209156-F997-40ED-A1BA-3DD3F18C6C42}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{00209156-F997-40ED-A1BA-3DD3F18C6C42}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{00209156-F997-40ED-A1BA-3DD3F18C6C42}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{00209156-F997-40ED-A1BA-3DD3F18C6C42}.Release|Any CPU.Build.0 = Release|Any CPU
+		{883D5E9E-B172-4DF2-A69D-02B2806E1A70}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{883D5E9E-B172-4DF2-A69D-02B2806E1A70}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{883D5E9E-B172-4DF2-A69D-02B2806E1A70}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{883D5E9E-B172-4DF2-A69D-02B2806E1A70}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6792C4D8-52DE-4C42-9513-ED9E322AA6D2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6792C4D8-52DE-4C42-9513-ED9E322AA6D2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6792C4D8-52DE-4C42-9513-ED9E322AA6D2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6792C4D8-52DE-4C42-9513-ED9E322AA6D2}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{0451BAEF-DF2E-4B98-8644-94EE9415E389} = {E242EE91-6F3A-41AC-A8C0-3FA1B7D12B4F}
+		{00209156-F997-40ED-A1BA-3DD3F18C6C42} = {E242EE91-6F3A-41AC-A8C0-3FA1B7D12B4F}
+		{883D5E9E-B172-4DF2-A69D-02B2806E1A70} = {E242EE91-6F3A-41AC-A8C0-3FA1B7D12B4F}
+		{6792C4D8-52DE-4C42-9513-ED9E322AA6D2} = {E242EE91-6F3A-41AC-A8C0-3FA1B7D12B4F}
+		{375507A9-8417-46BC-9C1A-99163D7CF310} = {246CC49E-8976-46E7-9DC5-67F51FB7D112}
+		{A3D69928-4AC5-4C7F-8AB3-C16508EAA9C2} = {430667F5-620C-4770-BA34-CC9D5164D421}
+		{26B311DB-D915-4F82-9838-B9F2AD64237A} = {430667F5-620C-4770-BA34-CC9D5164D421}
 	EndGlobalSection
 EndGlobal
