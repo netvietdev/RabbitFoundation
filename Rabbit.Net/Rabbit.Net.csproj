@@ -32,8 +32,10 @@
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="WebCrawling\CrawlingOption.cs" />
+    <Compile Include="WebCrawling\ISetRequestHeadersStrategy.cs" />
     <Compile Include="WebCrawling\IWebRequestWorker.cs" />
     <Compile Include="WebCrawling\ResponseData.cs" />
+    <Compile Include="WebCrawling\SetChromeRequestHeadersStrategy.cs" />
     <Compile Include="WebCrawling\WebRequestWorker.cs" />
     <Compile Include="WebPageParser\ImageInfo.cs" />
     <Compile Include="WebPageParser\IWebPageParser.cs" />

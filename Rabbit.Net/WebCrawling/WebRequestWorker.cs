@@ -8,10 +8,22 @@ namespace Rabbit.Net.WebCrawling
 {
     public sealed class WebRequestWorker : IWebRequestWorker
     {
+        private readonly ISetRequestHeadersStrategy _setRequestHeadersStrategy;
+
+        public WebRequestWorker()
+            : this(new SetChromeRequestHeadersStrategy())
+        {
+        }
+
+        public WebRequestWorker(ISetRequestHeadersStrategy setRequestHeadersStrategy)
+        {
+            _setRequestHeadersStrategy = setRequestHeadersStrategy;
+        }
+
         public ResponseData DownloadResponse(CrawlingOption option)
         {
-            var request = WebRequest.Create(new Uri(option.Uri));
-            request.ContentType = "application/x-www-form-urlencoded";
+            var request = (HttpWebRequest)WebRequest.Create(new Uri(option.Uri));
+            _setRequestHeadersStrategy.SetRequestHeaders(request);
 
             if (HttpMethod.Get == option.Method)
             {
