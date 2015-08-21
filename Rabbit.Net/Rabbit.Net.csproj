@@ -35,6 +35,7 @@
     <Compile Include="WebCrawling\ISetRequestHeadersStrategy.cs" />
     <Compile Include="WebCrawling\IWebRequestWorker.cs" />
     <Compile Include="WebCrawling\ResponseData.cs" />
+    <Compile Include="WebCrawling\ResponseDataExtensions.cs" />
     <Compile Include="WebCrawling\SetChromeRequestHeadersStrategy.cs" />
     <Compile Include="WebCrawling\WebRequestWorker.cs" />
     <Compile Include="WebPageParser\ImageInfo.cs" />

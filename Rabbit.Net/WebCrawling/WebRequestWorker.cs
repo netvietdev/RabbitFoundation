@@ -69,7 +69,11 @@ namespace Rabbit.Net.WebCrawling
             var responseStream = response.GetResponseStream();
             if (responseStream != null)
             {
-                result.Content = new StreamReader(responseStream).ReadToEnd();
+                using (var ms = new MemoryStream())
+                {
+                    responseStream.CopyTo(ms);
+                    result.Content = ms.ToArray();
+                }
             }
 
             return result;

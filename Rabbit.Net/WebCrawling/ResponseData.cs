@@ -6,6 +6,6 @@ namespace Rabbit.Net.WebCrawling
     {
         public HttpStatusCode StatusCode { get; set; }
         public string StatusDescription { get; set; }
-        public string Content { get; set; }
+        public byte[] Content { get; set; }
     }
 }
