@@ -62,11 +62,14 @@ namespace Rabbit.Net.WebCrawling
             var result = new ResponseData
             {
                 StatusCode = response.StatusCode,
-                StatusDescription = response.StatusDescription
+                StatusDescription = response.StatusDescription,
+                ResponseStream = response.GetResponseStream()
             };
 
-            result.Headers.Add("Content-Disposition", response.Headers["Content-Disposition"]);
-            result.ResponseStream = response.GetResponseStream();
+            if (response.ResponseUri != null)
+            {
+                result.ResponseUri = response.ResponseUri.ToString();
+            }
 
             return result;
         }

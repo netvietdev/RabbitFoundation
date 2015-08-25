@@ -1,32 +1,31 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>Rabbit.Net</id>
-    <version>1.1.3.1</version>
-    <title>Rabbit.Net</title>
+    <id>Rabbit.Global.Google</id>
+    <version>1.0.0</version>
+    <title>Rabbit.Global.Google</title>
     <authors>RabbitSoftware</authors>
     <owners>juniho</owners>
     <description>
-      Rabbit.Net
+      Version 1.0.0
     </description>
     <releaseNotes>
-      Rabbit.Net
     </releaseNotes>
     <summary>
     </summary>
     <language>en-US</language>
-    <projectUrl>https://github.com/netvietdev/</projectUrl>
+    <projectUrl>https://nuget.org/packages/Rabbit.Global.Google</projectUrl>
     <iconUrl>https://nuget.org/Content/Images/packageDefaultIcon-50x50.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <licenseUrl>http://opensource.org/licenses/Apache-2.0</licenseUrl>
-    <copyright>Copyright @ NetVietDev 2015</copyright>
+    <copyright>Copyright @ RabbitSoftware 2015</copyright>
     <dependencies>
         <group targetFramework="net40">
-          <!--<dependency id="log4net" version="1.2.10" />-->
+          <dependency id="Google.Apis.Drive.v2" version="1.9.2.1820" />
         </group>
     </dependencies>
     <references></references>
-    <tags></tags>
+    <tags>RabbitSoftware</tags>
   </metadata>
   <files>
     <file src="lib\" target="lib" />
