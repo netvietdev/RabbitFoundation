@@ -4,8 +4,8 @@
     <id>Rabbit.Foundation</id>
     <version>1.3.6</version>
     <title>Rabbit.Foundation</title>
-    <authors>RabbitSoftware</authors>
-    <owners>juniho</owners>
+    <authors>juniho</authors>
+    <owners>RabbitSoftware</owners>
     <description>
       Version 1.3.6
       * Add DataItem type and its extension methods
