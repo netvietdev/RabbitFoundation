@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Rabbit.Integrations.Redis</id>
-    <version>1.1.0</version>
+    <version>1.1.1</version>
     <title>Rabbit.Integrations.Redis</title>
     <authors>RabbitSoftware</authors>
     <owners>juniho</owners>

@@ -14,6 +14,11 @@ namespace Rabbit.Integrations.Redis
                 return default(T);
             }
 
+            if (typeof(T) == typeof(string))
+            {
+                return (T)Convert.ChangeType((string)dataOnCache, typeof(T));
+            }
+
             return ((string)dataOnCache).Deserialize<T>();
         }
 
