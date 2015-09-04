@@ -2,17 +2,20 @@
 <package >
   <metadata>
     <id>Rabbit.Integrations.Redis</id>
-    <version>1.1.1</version>
+    <version>1.1.2</version>
     <title>Rabbit.Integrations.Redis</title>
     <authors>RabbitSoftware</authors>
     <owners>juniho</owners>
     <description>
+      Provide extension methods to IDatabase of StackExchange.Redis
+    </description>
+    <releaseNotes>
+      Version 1.1.2
+      - Add get string method
       Version 1.1.0
       - Add a ConnectionMultiplexerManager which returns ConnectionMultiplexer instance
       Version 1.0.0
       - Provide Get/Set extension methods on IDatabase
-    </description>
-    <releaseNotes>
     </releaseNotes>
     <summary>
       Provide extension methods to get/set object of anytype from/to Redis

@@ -6,17 +6,17 @@ namespace Rabbit.Integrations.Redis
 {
     public static class DatabaseExtensions
     {
+        public static string Get(this IDatabase database, RedisKey key)
+        {
+            return database.StringGet(key);
+        }
+
         public static T Get<T>(this IDatabase database, RedisKey key) where T : class
         {
             var dataOnCache = database.StringGet(key);
             if (dataOnCache.IsNull)
             {
                 return default(T);
-            }
-
-            if (typeof(T) == typeof(string))
-            {
-                return (T)Convert.ChangeType((string)dataOnCache, typeof(T));
             }
 
             return ((string)dataOnCache).Deserialize<T>();
