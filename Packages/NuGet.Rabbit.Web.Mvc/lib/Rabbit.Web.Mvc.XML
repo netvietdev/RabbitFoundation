@@ -1,0 +1,13 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Rabbit.Web.Mvc</name>
+    </assembly>
+    <members>
+        <member name="P:Rabbit.Web.Mvc.Filters.RequireHttpsInProductionAttribute.RequireHttpsLocally">
+            <summary>
+            This property is False by default
+            </summary>
+        </member>
+    </members>
+</doc>
