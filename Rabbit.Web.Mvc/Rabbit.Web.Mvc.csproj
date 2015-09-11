@@ -37,6 +37,7 @@
     <Compile Include="Filters\CompressionFilterAttribute.cs" />
     <Compile Include="Filters\ExceptionFilterAttributeBase.cs" />
     <Compile Include="Filters\GlobalFilterCollectionExtensions.cs" />
+    <Compile Include="Filters\HandleNonHttpsWorker.cs" />
     <Compile Include="Filters\NoCacheAttribute.cs" />
     <Compile Include="Filters\RequireHttpsInProductionAttribute.cs" />
     <Compile Include="Filters\Validators\DefaultExceptionFilterValidator.cs" />

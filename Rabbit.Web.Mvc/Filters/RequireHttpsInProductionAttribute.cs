@@ -1,36 +1,26 @@
-﻿using System;
-using System.Linq;
-using System.Web.Mvc;
+﻿using System.Web.Mvc;
 
 namespace Rabbit.Web.Mvc.Filters
 {
+    /// <summary>
+    /// A custom RequireHttps handler
+    /// </summary>
     public class RequireHttpsInProductionAttribute : RequireHttpsAttribute
     {
-        private readonly string[] _excludeHosts;
-
-        public RequireHttpsInProductionAttribute(params string[] excludeHosts)
-        {
-            _excludeHosts = excludeHosts;
-        }
+        private readonly HandleNonHttpsWorker _worker;
 
         /// <summary>
-        /// This property is False by default
+        /// Instantiate new instance with a worker
         /// </summary>
-        public bool RequireHttpsLocally
+        /// <param name="worker"></param>
+        public RequireHttpsInProductionAttribute(HandleNonHttpsWorker worker)
         {
-            get;
-            set;
+            _worker = worker;
         }
 
         protected override void HandleNonHttpsRequest(AuthorizationContext filterContext)
         {
-            if (!RequireHttpsLocally && filterContext.HttpContext.Request.IsLocal)
-            {
-                return;
-            }
-
-            var url = filterContext.HttpContext.Request.Url;
-            if (url != null && _excludeHosts.Contains(url.Host, StringComparer.InvariantCultureIgnoreCase))
+            if (_worker.CanValidate(filterContext))
             {
                 return;
             }

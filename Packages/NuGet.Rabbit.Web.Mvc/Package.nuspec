@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>RabbitWebMvc</id>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <title>Rabbit.Web.Mvc</title>
     <authors>RabbitSoftware</authors>
     <owners>juniho</owners>
@@ -10,8 +10,6 @@
       Rabbit.Web.Mvc package from RabbitSoftware
     </description>
     <releaseNotes>
-      Version 1.0.0
-      
     </releaseNotes>
     <summary>
     </summary>
