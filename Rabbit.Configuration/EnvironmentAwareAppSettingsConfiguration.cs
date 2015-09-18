@@ -3,15 +3,18 @@ using System.Configuration;
 
 namespace Rabbit.Configuration
 {
+    /// <summary>
+    /// Get configuration keys from AppSettings or User environment variable lists
+    /// </summary>
     public class EnvironmentAwareAppSettingsConfiguration : IConfiguration
     {
         public string Get(string key)
         {
             var fromConfig = ConfigurationManager.AppSettings[key];
 
-            if (String.Equals(fromConfig, "{ENV}", StringComparison.InvariantCultureIgnoreCase))
+            if (string.IsNullOrWhiteSpace(fromConfig) || String.Equals(fromConfig, "{ENV}", StringComparison.InvariantCultureIgnoreCase))
             {
-                return Environment.GetEnvironmentVariable(key);
+                return Environment.GetEnvironmentVariable(key, EnvironmentVariableTarget.User);
             }
 
             return fromConfig;
