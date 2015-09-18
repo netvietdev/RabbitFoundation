@@ -1,18 +1,17 @@
 <?xml version="1.0"?>
 <package >
   <metadata>
-    <id>Rabbit.Web</id>
-    <version>1.0.0</version>
+    <id>RabbitWeb</id>
+    <version>1.1.0</version>
     <title>Rabbit.Web</title>
-    <authors>hhoangvan</authors>
-    <owners></owners>
+    <authors>RabbitSoftware</authors>
+    <owners>juniho</owners>
     <description>
-      A long description of the package. This shows up in the right pane of the Add Package Dialog as well as in the Package Manager Console when listing packages using the Get-Package command.
+      Common web concerns
     </description>
     <releaseNotes>
     </releaseNotes>
     <summary>
-      A short description of the package. If specified, this shows up in the middle pane of the Add Package Dialog. If not specified, a truncated version of the description is used instead.
     </summary>
     <language>en-US</language>
     <projectUrl>https://nuget.org/packages/NuGet.Rabbit.Web</projectUrl>

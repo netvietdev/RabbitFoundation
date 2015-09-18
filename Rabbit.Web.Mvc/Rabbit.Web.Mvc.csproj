@@ -34,6 +34,7 @@
     <DocumentationFile>bin\Release\Rabbit.Web.Mvc.XML</DocumentationFile>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="DefaultMvcHttpApplicationBehavior.cs" />
     <Compile Include="Filters\CompressionFilterAttribute.cs" />
     <Compile Include="Filters\ExceptionFilterAttributeBase.cs" />
     <Compile Include="Filters\GlobalFilterCollectionExtensions.cs" />
@@ -79,7 +80,12 @@
   <ItemGroup>
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <ProjectReference Include="..\Rabbit.Web\Rabbit.Web.csproj">
+      <Project>{24C4DAFF-D47C-47C4-9F23-5F98D62FC2B4}</Project>
+      <Name>Rabbit.Web</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Import Project="$(SolutionDir)\.nuget\NuGet.targets" Condition="Exists('$(SolutionDir)\.nuget\NuGet.targets')" />
   <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">

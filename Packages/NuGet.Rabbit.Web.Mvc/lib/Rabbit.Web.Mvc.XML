@@ -4,6 +4,26 @@
         <name>Rabbit.Web.Mvc</name>
     </assembly>
     <members>
+        <member name="T:Rabbit.Web.Mvc.DefaultMvcHttpApplicationBehavior">
+            <summary>
+            Default behavior for MVC application
+            </summary>
+        </member>
+        <member name="M:Rabbit.Web.Mvc.DefaultMvcHttpApplicationBehavior.OnStart">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:Rabbit.Web.Mvc.DefaultMvcHttpApplicationBehavior.OnBeforeStart">
+            <summary>
+            Custom behavior before starting
+            </summary>
+        </member>
+        <member name="M:Rabbit.Web.Mvc.DefaultMvcHttpApplicationBehavior.OnAfterStart">
+            <summary>
+            Custom behavior after started
+            </summary>
+        </member>
         <member name="T:Rabbit.Web.Mvc.Filters.HandleNonHttpsWorker">
             <summary>
             Handle non https

@@ -30,7 +30,10 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="CustomHttpApplication.cs" />
+    <Compile Include="DefaultHttpApplicationBehavior.cs" />
     <Compile Include="Diagnostics\HttpRequestExtensions.cs" />
+    <Compile Include="IHttpApplicationBehavior.cs" />
     <Compile Include="Modules\CookieCultureHttpModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
