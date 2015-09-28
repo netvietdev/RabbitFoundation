@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Rabbit.Foundation</id>
-    <version>1.4.0</version>
+    <version>1.5.0</version>
     <title>Rabbit.Foundation</title>
     <authors>juniho</authors>
     <owners>RabbitSoftware</owners>
@@ -10,6 +10,8 @@
       Base classes from RabbitSoftware
     </description>
     <releaseNotes>
+      Version 1.5.0
+      * Add stream &amp; xml extension methods
       Version 1.4.0
       * Add string extension methods
       Version 1.3.6

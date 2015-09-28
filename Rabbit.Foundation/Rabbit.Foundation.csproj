@@ -43,10 +43,13 @@
     <Compile Include="List\UniqueListValidator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="List\SmartList.cs" />
+    <Compile Include="Text\StreamExtensions.cs" />
     <Compile Include="Text\StringExtensions.cs" />
+    <Compile Include="Text\XmlExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
