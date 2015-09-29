@@ -14,7 +14,17 @@ namespace Rabbit.Foundation.Tests
             var customers = document.CreateElement("Customers");
             document.AppendChild(customers);
 
-            Assert.AreEqual("<?xml version=\"1.0\" encoding=\"utf-8\"?><Customers />", document.ToUnicodeText());
+            Assert.AreEqual("<?xml version=\"1.0\" encoding=\"utf-16\"?><Customers />", document.ToUnicodeText());
+        }
+
+        [TestMethod]
+        public void CanGetUnicodeTextOfAnElement()
+        {
+            var document = new XmlDocument();
+            var customers = document.CreateElement("Customers");
+            document.AppendChild(customers);
+
+            Assert.AreEqual("<Customers />", customers.ToUnicodeText());
         }
     }
 }

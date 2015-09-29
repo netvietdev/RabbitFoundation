@@ -27,12 +27,24 @@ namespace Rabbit.Foundation.Text
 
             using (var ms = new MemoryStream())
             {
-                var writer = XmlWriter.Create(ms);
+                var writer = CreateXmlWriter(xmlNode, ms, encoding);
                 xmlNode.WriteTo(writer);
                 writer.Flush();
 
                 return ms.ReadAllText(encoding);
             }
+        }
+
+        private static XmlWriter CreateXmlWriter(XmlNode xmlNode, Stream output, Encoding encoding)
+        {
+            if (xmlNode is XmlDocument)
+            {
+                return XmlWriter.Create(output, new XmlWriterSettings()
+                {
+                    Encoding = encoding
+                });
+            }
+            return new XmlTextWriter(output, encoding);
         }
     }
 }

@@ -2,12 +2,16 @@
 <package >
   <metadata>
     <id>Rabbit.Foundation</id>
-    <version>1.5.0</version>
+    <version>1.5.2</version>
     <title>Rabbit.Foundation</title>
     <authors>juniho</authors>
     <owners>RabbitSoftware</owners>
     <description>
-      Base classes from RabbitSoftware
+      Base classes from RabbitSoftware including:
+      - DataItem and helper methods
+      - SmartList collection with custom validators
+      - String / Stream / XML extensions methods
+      For detail please check project site https://juanonsoftware.github.io/Rabbit-Foundation-Package/
     </description>
     <releaseNotes>
       Version 1.5.0
@@ -33,7 +37,7 @@
     <summary>
     </summary>
     <language>en-US</language>
-    <projectUrl>https://nuget.org/packages/Rabbit.Foundation</projectUrl>
+    <projectUrl>https://juanonsoftware.github.io/Rabbit-Foundation-Package/</projectUrl>
     <iconUrl>https://nuget.org/Content/Images/packageDefaultIcon-50x50.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <licenseUrl>http://opensource.org/licenses/Apache-2.0</licenseUrl>
@@ -41,7 +45,7 @@
     <dependencies>
     </dependencies>
     <references></references>
-    <tags>RabbitSoftware SmartList</tags>
+    <tags>RabbitSoftware SmartList XML</tags>
   </metadata>
   <files>
     <file src="lib\" target="lib" />
