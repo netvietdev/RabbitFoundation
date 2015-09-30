@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace Rabbit.Foundation.Text
@@ -7,12 +8,19 @@ namespace Rabbit.Foundation.Text
     {
         public static string GetSubstring(this string source, int length)
         {
-            return source.GetSubstring(length, ".");
+            var defaultOptions = new List<string>()
+            {
+                " ",
+                ".",
+                ",",
+                ";"
+            };
+            return source.GetSubstring(length, defaultOptions.ToArray());
         }
 
         public static string GetSubstring(this string source, int length, params string[] options)
         {
-            if (string.IsNullOrWhiteSpace(source))
+            if (string.IsNullOrEmpty(source))
             {
                 return string.Empty;
             }

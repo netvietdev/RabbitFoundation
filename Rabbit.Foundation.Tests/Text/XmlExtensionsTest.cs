@@ -2,7 +2,7 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Rabbit.Foundation.Text;
 
-namespace Rabbit.Foundation.Tests
+namespace Rabbit.Foundation.Tests.Text
 {
     [TestClass]
     public class XmlExtensionsTest

@@ -27,11 +27,13 @@ namespace Rabbit.Foundation.Text
 
             using (var ms = new MemoryStream())
             {
-                var writer = CreateXmlWriter(xmlNode, ms, encoding);
-                xmlNode.WriteTo(writer);
-                writer.Flush();
+                using (var writer = CreateXmlWriter(xmlNode, ms, encoding))
+                {
+                    xmlNode.WriteTo(writer);
+                    writer.Flush();
 
-                return ms.ReadAllText(encoding);
+                    return ms.ReadAllText(encoding);
+                }
             }
         }
 
@@ -41,7 +43,7 @@ namespace Rabbit.Foundation.Text
             {
                 return XmlWriter.Create(output, new XmlWriterSettings()
                 {
-                    Encoding = encoding
+                    Encoding = encoding,
                 });
             }
             return new XmlTextWriter(output, encoding);

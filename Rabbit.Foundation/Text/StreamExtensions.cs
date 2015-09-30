@@ -12,7 +12,7 @@ namespace Rabbit.Foundation.Text
         /// <summary>
         /// Read stream and returns its content as unicode text
         /// </summary>
-        public static string ReadAllText(this Stream stream)
+        public static string ReadAllTextUnicode(this Stream stream)
         {
             return ReadAllText(stream, Encoding.Unicode);
         }

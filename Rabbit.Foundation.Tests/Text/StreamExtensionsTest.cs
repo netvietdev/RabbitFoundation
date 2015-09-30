@@ -1,9 +1,9 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System.IO;
+﻿using System.IO;
 using System.Xml;
+using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Rabbit.Foundation.Text;
 
-namespace Rabbit.Foundation.Tests
+namespace Rabbit.Foundation.Tests.Text
 {
     [TestClass]
     public class StreamExtensionsTest
@@ -21,7 +21,7 @@ namespace Rabbit.Foundation.Tests
                 document.WriteTo(writer);
                 writer.Flush();
 
-                var xml = ms.ReadAllText();
+                var xml = ms.ReadAllTextUnicode();
 
                 Assert.AreEqual("<?xml version=\"1.0\" encoding=\"utf-8\"?><Customers />", xml);
             }

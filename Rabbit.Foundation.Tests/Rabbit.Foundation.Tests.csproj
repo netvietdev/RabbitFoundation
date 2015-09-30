@@ -62,9 +62,9 @@
     <Compile Include="List\SmartListTest.MoveDown.cs" />
     <Compile Include="List\SmartListTest.Add.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="StreamExtensionsTest.cs" />
+    <Compile Include="Text\StreamExtensionsTest.cs" />
     <Compile Include="Text\StringExtensionsTest.cs" />
-    <Compile Include="XmlExtensionsTest.cs" />
+    <Compile Include="Text\XmlExtensionsTest.cs" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\Rabbit.Foundation\Rabbit.Foundation.csproj">
