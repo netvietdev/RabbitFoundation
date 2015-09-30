@@ -8,6 +8,14 @@ namespace Rabbit.IOC
     public static class ModuleHelper
     {
         /// <summary>
+        /// Filter modules that are not satisfied with a given condition by calling the IsSatisfied method of IModule
+        /// </summary>
+        public static IEnumerable<IModule> FilterWith(this IEnumerable<IModule> modules, object condition)
+        {
+            return modules.Where(x => x.IsSatisfied(condition));
+        }
+
+        /// <summary>
         /// Create instances from IModule types
         /// </summary>
         public static IEnumerable<IModule> CreateModules(this IEnumerable<Type> moduleTypes)

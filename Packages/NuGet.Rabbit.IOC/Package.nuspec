@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Rabbit.IOC</id>
-    <version>1.0.0-Beta1</version>
+    <version>1.0.0-Beta2</version>
     <title>Rabbit.IOC</title>
     <authors>RabbitSoftware</authors>
     <owners>juniho</owners>
