@@ -53,6 +53,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="Configuration\EnvironmentAwareAppSettingsConfigurationTests.cs" />
     <Compile Include="List\SmartListTest.Clear.cs" />
     <Compile Include="List\SmartListTest.Contains.cs" />
     <Compile Include="List\SmartListTest.MoveUp.cs" />

@@ -1,7 +1,7 @@
 using System;
 using System.Configuration;
 
-namespace Rabbit.Configuration
+namespace Rabbit.Foundation.Configuration
 {
     /// <summary>
     /// Get configuration keys from AppSettings or User environment variable lists

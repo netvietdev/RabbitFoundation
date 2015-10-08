@@ -53,12 +53,6 @@
     <Compile Include="EnvironmentAwareAppSettingsConfigurationTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Rabbit.Configuration\Rabbit.Configuration.csproj">
-      <Project>{B5669974-92E9-4F5E-9B31-B6F24837C68B}</Project>
-      <Name>Rabbit.Configuration</Name>
-    </ProjectReference>
-  </ItemGroup>
   <Choose>
     <When Condition="'$(VisualStudioVersion)' == '10.0' And '$(IsCodedUITest)' == 'True'">
       <ItemGroup>

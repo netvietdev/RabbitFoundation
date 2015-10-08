@@ -37,9 +37,12 @@
   <ItemGroup>
     <Compile Include="Data\DataItem.cs" />
     <Compile Include="Data\DataItemExtensions.cs" />
+    <Compile Include="Configuration\EnvironmentAwareAppSettingsConfiguration.cs" />
+    <Compile Include="Configuration\IConfiguration.cs" />
     <Compile Include="List\DefaultSmartListValidator.cs" />
     <Compile Include="List\ISmartList.cs" />
     <Compile Include="List\ISmartListValidator.cs" />
+    <Compile Include="List\ListExtensions.cs" />
     <Compile Include="List\UniqueListValidator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="List\SmartList.cs" />
@@ -49,6 +52,7 @@
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="System.Configuration" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup />

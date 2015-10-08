@@ -1,4 +1,4 @@
-﻿namespace Rabbit.Configuration
+﻿namespace Rabbit.Foundation.Configuration
 {
     public interface IConfiguration
     {
