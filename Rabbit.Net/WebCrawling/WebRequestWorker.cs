@@ -1,5 +1,4 @@
 ﻿using System;
-using System.IO;
 using System.Net;
 using System.Net.Http;
 using System.Text;
@@ -63,17 +62,13 @@ namespace Rabbit.Net.WebCrawling
             var result = new ResponseData
             {
                 StatusCode = response.StatusCode,
-                StatusDescription = response.StatusDescription
+                StatusDescription = response.StatusDescription,
+                ResponseStream = response.GetResponseStream()
             };
 
-            var responseStream = response.GetResponseStream();
-            if (responseStream != null)
+            if (response.ResponseUri != null)
             {
-                using (var ms = new MemoryStream())
-                {
-                    responseStream.CopyTo(ms);
-                    result.Content = ms.ToArray();
-                }
+                result.ResponseUri = response.ResponseUri.ToString();
             }
 
             return result;
