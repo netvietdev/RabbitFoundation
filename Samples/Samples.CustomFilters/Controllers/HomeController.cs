@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Web;
 using System.Web.Mvc;
@@ -17,6 +18,14 @@ namespace Samples.CustomFilters.Controllers
             throw new EntityNotFoundException();
 
             return View();
+        }
+
+        public ActionResult Browse(int id)
+        {
+            return new ContentResult()
+            {
+                Content = id.ToString(CultureInfo.InvariantCulture)
+            };
         }
 
     }

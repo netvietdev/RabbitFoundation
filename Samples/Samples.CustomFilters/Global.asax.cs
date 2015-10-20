@@ -1,12 +1,9 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
+﻿using Rabbit.Web.Mvc.Security;
+using Samples.CustomFilters.App_Start;
 using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
-using Samples.CustomFilters.App_Start;
 
 namespace Samples.CustomFilters
 {
@@ -23,6 +20,8 @@ namespace Samples.CustomFilters
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
+
+            ModelBinders.Binders.DefaultBinder = new SafeHtmlModelBinder();
         }
     }
 }
