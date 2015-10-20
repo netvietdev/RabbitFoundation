@@ -57,5 +57,15 @@
             </summary>
             <param name="worker"></param>
         </member>
+        <member name="T:Rabbit.Web.Mvc.Security.SafeHtmlAttribute">
+            <summary>
+            Apply on property which needs to be treated for safe string
+            </summary>
+        </member>
+        <member name="T:Rabbit.Web.Mvc.Security.SafeHtmlModelBinder">
+            <summary>
+            The binder with ability to handle SafeHtmlAttribute
+            </summary>
+        </member>
     </members>
 </doc>

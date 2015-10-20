@@ -2,21 +2,23 @@
 <package >
   <metadata>
     <id>RabbitWebMvc</id>
-    <version>1.0.2.1</version>
+    <version>1.1.1</version>
     <title>Rabbit.Web.Mvc</title>
     <authors>RabbitSoftware</authors>
     <owners>juniho</owners>
     <description>
-      Rabbit.Web.Mvc package from RabbitSoftware
+      ASP.NET MVC Extensions from RabbitSoftware
     </description>
     <releaseNotes>
+      Version 1.1.0
+      - Add SafeHtmlModelBinder and SafeHtmlAttribute
       Version 1.0.2
       - Uses Rabbit.Web
     </releaseNotes>
     <summary>
     </summary>
     <language>en-US</language>
-    <projectUrl>https://nuget.org/packages/Rabbit.Web.Mvc</projectUrl>
+    <projectUrl>http://juanonsoftware.github.io/Rabbit-web-mvc-extensions/</projectUrl>
     <iconUrl>https://nuget.org/Content/Images/packageDefaultIcon-50x50.png</iconUrl>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
     <licenseUrl>http://opensource.org/licenses/Apache-2.0</licenseUrl>
