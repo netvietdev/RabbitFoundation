@@ -41,7 +41,7 @@
     <Compile Include="Data\DataItemExtensions.cs" />
     <Compile Include="Configuration\EnvironmentAwareAppSettingsConfiguration.cs" />
     <Compile Include="Configuration\IConfiguration.cs" />
-    <Compile Include="Data\DbHelper.cs" />
+    <Compile Include="Data\SqlServerDbWorker.cs" />
     <Compile Include="List\DefaultSmartListValidator.cs" />
     <Compile Include="List\ISmartList.cs" />
     <Compile Include="List\ISmartListValidator.cs" />
