@@ -6,10 +6,10 @@ namespace Rabbit.Foundation.Data
     public class SqlServerDbWorker
     {
         /// <summary>
-        /// Check if a database declared in the connection string is exists or not
+        /// Get database id, use to check if a database declared in the connection string is exists or not
         /// </summary>
         /// <param name="connectionString">Original connection string</param>
-        public bool CheckIfDbExists(string connectionString)
+        public int GetDatabaseId(string connectionString)
         {
             var infos = ParseConnectionString(connectionString);
             var databaseName = infos.Item1;
@@ -24,13 +24,13 @@ namespace Rabbit.Foundation.Data
                     connection.Open();
                     var result = command.ExecuteScalar();
 
-                    return !(result is DBNull);
+                    return (result is DBNull) ? 0 : (int)result;
                 }
             }
         }
 
         /// <summary>
-        /// Create database specified in connection string. This method should be called after CheckIfDbExists.
+        /// Create database specified in connection string. This method should be called after GetDatabaseId
         /// </summary>
         /// <param name="connectionString">Original connection string</param>
         public void CreateAssociatedDatabase(string connectionString)
