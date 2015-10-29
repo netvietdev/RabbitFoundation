@@ -54,8 +54,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rabbit.IOC", "Rabbit.IOC\Ra
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NuGet.Rabbit.IOC", "Packages\NuGet.Rabbit.IOC\NuGet.Rabbit.IOC.csproj", "{EB97B10B-848A-4037-950B-A529A8310479}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rabbit.IOC.SimpleInjector", "Rabbit.IOC.SimpleInjector\Rabbit.IOC.SimpleInjector.csproj", "{08E09B43-3015-493B-98F4-A28DC1D3ED62}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Rabbit.Web.Owin", "Rabbit.Web.Owin\Rabbit.Web.Owin.csproj", "{D4E8C71D-2C92-429C-8669-BE558CEC2D31}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "NuGet.Rabbit.Web.Owin", "Packages\NuGet.Rabbit.Web.Owin\NuGet.Rabbit.Web.Owin.csproj", "{7187BEA7-2607-41FD-A269-F84E2D085155}"
@@ -142,10 +140,6 @@ Global
 		{EB97B10B-848A-4037-950B-A529A8310479}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{EB97B10B-848A-4037-950B-A529A8310479}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{EB97B10B-848A-4037-950B-A529A8310479}.Release|Any CPU.Build.0 = Release|Any CPU
-		{08E09B43-3015-493B-98F4-A28DC1D3ED62}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{08E09B43-3015-493B-98F4-A28DC1D3ED62}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{08E09B43-3015-493B-98F4-A28DC1D3ED62}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{08E09B43-3015-493B-98F4-A28DC1D3ED62}.Release|Any CPU.Build.0 = Release|Any CPU
 		{D4E8C71D-2C92-429C-8669-BE558CEC2D31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{D4E8C71D-2C92-429C-8669-BE558CEC2D31}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D4E8C71D-2C92-429C-8669-BE558CEC2D31}.Release|Any CPU.ActiveCfg = Release|Any CPU
