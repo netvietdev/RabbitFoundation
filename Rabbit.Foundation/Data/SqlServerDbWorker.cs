@@ -3,7 +3,7 @@ using System.Data.SqlClient;
 
 namespace Rabbit.Foundation.Data
 {
-    public class SqlServerDbWorker
+    public class SqlServerDbWorker : ISqlDbWorker
     {
         /// <summary>
         /// Get database id, use to check if a database declared in the connection string is exists or not
