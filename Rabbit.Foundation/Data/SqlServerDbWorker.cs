@@ -59,6 +59,7 @@ namespace Rabbit.Foundation.Data
         {
             var builder = new SqlConnectionStringBuilder(connectionString);
             var databaseName = builder.InitialCatalog;
+            builder.InitialCatalog = string.Empty;
 
             return new Tuple<string, string>(databaseName, builder.ConnectionString);
         }
