@@ -24,7 +24,7 @@ namespace Rabbit.Foundation.Data
                     connection.Open();
                     var result = command.ExecuteScalar();
 
-                    return (result is DBNull) ? 0 : (int)result;
+                    return (result is DBNull) ? 0 : Convert.ToInt32(result);
                 }
             }
         }
