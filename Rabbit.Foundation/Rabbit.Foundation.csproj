@@ -43,6 +43,7 @@
     <Compile Include="Configuration\IConfiguration.cs" />
     <Compile Include="Data\ISqlDbWorker.cs" />
     <Compile Include="Data\SqlServerDbWorker.cs" />
+    <Compile Include="DateTimeExtensions.cs" />
     <Compile Include="List\DefaultSmartListValidator.cs" />
     <Compile Include="List\ISmartList.cs" />
     <Compile Include="List\ISmartListValidator.cs" />

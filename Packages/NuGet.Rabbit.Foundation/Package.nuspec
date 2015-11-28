@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Rabbit.Foundation</id>
-    <version>1.7.2</version>
+    <version>1.7.3</version>
     <title>Rabbit.Foundation</title>
     <authors>juniho</authors>
     <owners>RabbitSoftware</owners>
@@ -14,6 +14,8 @@
       For detail please check project site https://juanonsoftware.github.io/Rabbit-Foundation-Package/
     </description>
     <releaseNotes>
+      Version 1.7.3
+      * Add DateTime extension methods
       Version 1.7.0
       * Add ISqlDbWorker &amp; SqlServerDbWorker to check existence of database, create new database
       Version 1.6.0
