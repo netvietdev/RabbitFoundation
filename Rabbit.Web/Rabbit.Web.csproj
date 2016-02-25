@@ -32,7 +32,8 @@
   <ItemGroup>
     <Compile Include="CustomHttpApplication.cs" />
     <Compile Include="DefaultHttpApplicationBehavior.cs" />
-    <Compile Include="Diagnostics\HttpRequestExtensions.cs" />
+    <Compile Include="Extensions\HttpRequestExtensions.cs" />
+    <Compile Include="Extensions\HttpContextExtensions.cs" />
     <Compile Include="IHttpApplicationBehavior.cs" />
     <Compile Include="Modules\CookieCultureHttpModule.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -42,6 +43,7 @@
     <Reference Include="System.Net.Http" />
     <Reference Include="System.Web" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

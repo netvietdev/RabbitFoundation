@@ -37,6 +37,7 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="AssemblyExtensions.cs" />
     <Compile Include="Data\DataItem.cs" />
     <Compile Include="Extensions\DataItemExtensions.cs" />
     <Compile Include="Configuration\EnvironmentAwareAppSettingsConfiguration.cs" />

@@ -4,10 +4,16 @@ using System.Net.Http;
 using System.Text;
 using System.Web;
 
-namespace Rabbit.Web.Diagnostics
+namespace Rabbit.Web.Extensions
 {
     public static class HttpRequestExtensions
     {
+        /// <summary>
+        /// Get RawUrl, HttpMethod and InputStream (in case of non-GET request)
+        /// </summary>
+        /// <returns>
+        /// A result in this format: RawUrl: XYZ. HttpMethod: XYZ. InputStream: XYZ
+        /// </returns>
         public static string GetRequestInfo(this HttpRequest request)
         {
             var sb = new StringBuilder();
@@ -19,7 +25,7 @@ namespace Rabbit.Web.Diagnostics
                 var input = new StreamReader(request.InputStream).ReadToEnd();
 
                 sb.AppendLine();
-                sb.AppendFormat("InputStream: {0}", input);
+                sb.AppendFormat(". InputStream: {0}", input);
             }
 
             return sb.ToString();
