@@ -38,12 +38,12 @@
   </PropertyGroup>
   <ItemGroup>
     <Compile Include="Data\DataItem.cs" />
-    <Compile Include="Data\DataItemExtensions.cs" />
+    <Compile Include="Extensions\DataItemExtensions.cs" />
     <Compile Include="Configuration\EnvironmentAwareAppSettingsConfiguration.cs" />
     <Compile Include="Configuration\IConfiguration.cs" />
     <Compile Include="Data\ISqlDbWorker.cs" />
     <Compile Include="Data\SqlServerDbWorker.cs" />
-    <Compile Include="DateTimeExtensions.cs" />
+    <Compile Include="Extensions\DateTimeExtensions.cs" />
     <Compile Include="List\DefaultSmartListValidator.cs" />
     <Compile Include="List\ISmartList.cs" />
     <Compile Include="List\ISmartListValidator.cs" />
@@ -51,9 +51,9 @@
     <Compile Include="List\UniqueListValidator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="List\SmartList.cs" />
-    <Compile Include="Text\StreamExtensions.cs" />
-    <Compile Include="Text\StringExtensions.cs" />
-    <Compile Include="Text\XmlExtensions.cs" />
+    <Compile Include="Extensions\StreamExtensions.cs" />
+    <Compile Include="Extensions\StringExtensions.cs" />
+    <Compile Include="Extensions\XmlExtensions.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="System" />

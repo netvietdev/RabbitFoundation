@@ -1,8 +1,9 @@
 ﻿using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using Rabbit.Foundation.Data;
 
-namespace Rabbit.Foundation.Data
+namespace Rabbit.Foundation.Extensions
 {
     public static class DataItemExtensions
     {

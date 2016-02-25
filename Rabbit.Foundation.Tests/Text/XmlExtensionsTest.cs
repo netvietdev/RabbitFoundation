@@ -1,6 +1,6 @@
 ﻿using System.Xml;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Rabbit.Foundation.Text;
+using Rabbit.Foundation.Extensions;
 
 namespace Rabbit.Foundation.Tests.Text
 {

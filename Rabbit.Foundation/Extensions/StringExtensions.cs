@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 
-namespace Rabbit.Foundation.Text
+namespace Rabbit.Foundation.Extensions
 {
     public static class StringExtensions
     {

@@ -2,7 +2,7 @@
 using System.IO;
 using System.Text;
 
-namespace Rabbit.Foundation.Text
+namespace Rabbit.Foundation.Extensions
 {
     /// <summary>
     /// Extension methods for Stream type

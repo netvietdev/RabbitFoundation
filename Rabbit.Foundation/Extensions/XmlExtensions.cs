@@ -3,7 +3,7 @@ using System.IO;
 using System.Text;
 using System.Xml;
 
-namespace Rabbit.Foundation.Text
+namespace Rabbit.Foundation.Extensions
 {
     public static class XmlExtensions
     {
