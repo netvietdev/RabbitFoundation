@@ -5,6 +5,9 @@ namespace Rabbit.Uniquators
 {
     public static class NumberToString
     {
+        /// <summary>
+        /// Convert a number to another base system
+        /// </summary>
         public static string Convert(UInt64 number, IdBase radix)
         {
             switch (radix)
@@ -17,11 +20,16 @@ namespace Rabbit.Uniquators
                     return Convert(number, Characters.Sexagesimal);
                 case IdBase.Duosexagesimal:
                     return Convert(number, Characters.Duosexagesimal);
+                case IdBase.WebId:
+                    return Convert(number, Characters.ShortIdTable);
             }
 
             throw new Exception("Not handle " + radix);
         }
 
+        /// <summary>
+        /// Convert a number to another base system based on the system's table
+        /// </summary>
         public static string Convert(UInt64 number, string charactersTable)
         {
             var result = new Stack();
