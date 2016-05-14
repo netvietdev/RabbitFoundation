@@ -6,6 +6,9 @@ namespace Rabbit.Foundation.Extensions
 {
     public static class StringExtensions
     {
+        /// <summary>
+        /// Gets a substring in smart way (seeks to the nearest space, dot, point, semicolom character)
+        /// </summary>
         public static string GetSubstring(this string source, int length)
         {
             var defaultOptions = new List<string>()
@@ -18,6 +21,9 @@ namespace Rabbit.Foundation.Extensions
             return source.GetSubstring(length, defaultOptions.ToArray());
         }
 
+        /// <summary>
+        /// Gets a substring with options to search (stop when at least an option characters is matched)
+        /// </summary>
         public static string GetSubstring(this string source, int length, params string[] options)
         {
             if (string.IsNullOrEmpty(source))

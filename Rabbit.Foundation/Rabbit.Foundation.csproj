@@ -45,6 +45,7 @@
     <Compile Include="Data\ISqlDbWorker.cs" />
     <Compile Include="Data\SqlServerDbWorker.cs" />
     <Compile Include="Extensions\DateTimeExtensions.cs" />
+    <Compile Include="Extensions\FileInfoExtensions.cs" />
     <Compile Include="List\DefaultSmartListValidator.cs" />
     <Compile Include="List\ISmartList.cs" />
     <Compile Include="List\ISmartListValidator.cs" />

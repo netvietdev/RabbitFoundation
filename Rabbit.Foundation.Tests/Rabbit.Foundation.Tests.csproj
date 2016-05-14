@@ -55,6 +55,7 @@
   <ItemGroup>
     <Compile Include="Configuration\EnvironmentAwareAppSettingsConfigurationTests.cs" />
     <Compile Include="DateTimeExtensionsTests.cs" />
+    <Compile Include="FileInfoExtensionsTests.cs" />
     <Compile Include="Text\StreamExtensionsTest.cs" />
     <Compile Include="Text\StringExtensionsTest.cs" />
     <Compile Include="Text\XmlExtensionsTest.cs" />
