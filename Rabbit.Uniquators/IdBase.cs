@@ -18,5 +18,9 @@
         /// Base62 encoding, using 0-9, A-Z, and a-z
         /// </summary>
         Duosexagesimal,
+        /// <summary>
+        /// A custom base which uses to generate shortest ID
+        /// </summary>
+        WebId
     }
 }
