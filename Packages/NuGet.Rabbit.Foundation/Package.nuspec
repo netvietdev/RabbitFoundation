@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>Rabbit.Foundation</id>
-    <version>1.9.0</version>
+    <version>1.10.0</version>
     <title>Rabbit.Foundation</title>
     <authors>juniho</authors>
     <owners>RabbitSoftware</owners>
@@ -14,33 +14,36 @@
       For detail please check project site https://juanonsoftware.github.io/Rabbit-Foundation-Package/
     </description>
     <releaseNotes>
+      Version 1.10.0
+      * Added extension methods FileInfo
+      * Added FileCompressionService with default implementation using .net feature NetFxFileCompressionService
       Version 1.9.0
-      * Add extension methods on Assembly type
+      * Added extension methods on Assembly type
       Version 1.8.1
       * All extension methods now are under Rabbit.Foundation.Extensions namespace
       * Fix issues on a DateTime extension method
       Version 1.7.3
-      * Add DateTime extension methods
+      * Added DateTime extension methods
       Version 1.7.0
-      * Add ISqlDbWorker &amp; SqlServerDbWorker to check existence of database, create new database
+      * Added ISqlDbWorker &amp; SqlServerDbWorker to check existence of database, create new database
       Version 1.6.0
-      * Add IConfiguration contract
-      * Add ListExtensions
+      * Added IConfiguration contract
+      * Added ListExtensions
       Version 1.5.0
-      * Add stream &amp; xml extension methods
+      * Added stream &amp; xml extension methods
       Version 1.4.0
-      * Add string extension methods
+      * Added string extension methods
       Version 1.3.6
-      * Add DataItem type and its extension methods
+      * Added DataItem type and its extension methods
       Version 1.3.5
       * By default, SmartList instantiates a List, then it's possible to add/remove items
       Version 1.3.2
       * ISmartList inherits from IList
       * Fix DefaultSmartListValidator / Code Analysis issues
       Version 1.3.0
-      * Add MoveUp/MoveDown on SmartList
+      * Added MoveUp/MoveDown on SmartList
       Version 1.2.0
-      * Add Insert/RemoveAt on SmartList
+      * Added Insert/RemoveAt on SmartList
       Version 1.1.0
       * Provide a seal UniqueListValidator implementation that can accept an IEqualityComparer
       Version 1.0.0
