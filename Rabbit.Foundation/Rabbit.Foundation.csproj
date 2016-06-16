@@ -41,6 +41,7 @@
     <Compile Include="Compression\NetFxFileCompressionService.cs" />
     <Compile Include="Extensions\AssemblyExtensions.cs" />
     <Compile Include="Data\DataItem.cs" />
+    <Compile Include="Extensions\CollectionExtensions.cs" />
     <Compile Include="Extensions\DataItemExtensions.cs" />
     <Compile Include="Configuration\EnvironmentAwareAppSettingsConfiguration.cs" />
     <Compile Include="Configuration\IConfiguration.cs" />
