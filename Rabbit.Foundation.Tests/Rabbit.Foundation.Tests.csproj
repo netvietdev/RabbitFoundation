@@ -53,6 +53,7 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
+    <Compile Include="CollectionExtensionsTests.cs" />
     <Compile Include="Configuration\EnvironmentAwareAppSettingsConfigurationTests.cs" />
     <Compile Include="DateTimeExtensionsTests.cs" />
     <Compile Include="FileInfoExtensionsTests.cs" />
