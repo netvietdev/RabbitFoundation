@@ -24,6 +24,16 @@
             Custom behavior after started
             </summary>
         </member>
+        <member name="T:Rabbit.Web.Mvc.Filters.AutoTransactionalFilterAttribute">
+            <summary>
+            Start a transaction scope when "Action" is starting and Complete when "Action" is executed.
+            </summary>
+        </member>
+        <member name="P:Rabbit.Web.Mvc.Filters.AutoTransactionalFilterAttribute.RequiresNew">
+            <summary>
+            By default a transaction will be required. If set to true, this will create a new root transaction.
+            </summary>
+        </member>
         <member name="T:Rabbit.Web.Mvc.Filters.HandleNonHttpsWorker">
             <summary>
             Handle non https

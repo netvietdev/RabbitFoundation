@@ -2,7 +2,7 @@
 <package >
   <metadata>
     <id>RabbitWebMvc</id>
-    <version>1.1.2.1</version>
+    <version>1.2.0.0</version>
     <title>Rabbit.Web.Mvc</title>
     <authors>RabbitSoftware</authors>
     <owners>juniho</owners>

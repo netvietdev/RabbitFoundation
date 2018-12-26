@@ -102,6 +102,7 @@
     <Compile Include="Controllers\MessageController.cs" />
     <Compile Include="Models\DefaultUserMessageService.cs" />
     <Compile Include="Models\IUserMessageService.cs" />
+    <Compile Include="Models\UserMessageServiceContext.cs" />
     <Compile Include="Models\UserMessageServiceResolver.cs" />
     <Compile Include="Models\UserMessageViewModel.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

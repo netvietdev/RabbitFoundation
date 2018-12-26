@@ -5,16 +5,10 @@ namespace Rabbit.Web.MvcNotification.Controllers
 {
     public class MessageController : Controller
     {
-        private readonly IUserMessageService _userMessageService;
-
-        public MessageController()
-        {
-            _userMessageService = UserMessageServiceResolver.GetUserMessageService() ?? new DefaultUserMessageService();
-        }
-
         public ActionResult Index(int type)
         {
-            return View(_userMessageService.BuildUserMessage(type));
+            var vm = UserMessageServiceContext.GetUserMessage(type, HttpContext.Request.QueryString);
+            return View(vm);
         }
     }
 }

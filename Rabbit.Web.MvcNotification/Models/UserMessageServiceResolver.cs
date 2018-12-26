@@ -1,17 +1,10 @@
 ﻿namespace Rabbit.Web.MvcNotification.Models
 {
-    public class UserMessageServiceResolver
+    public static class UserMessageServiceResolver
     {
-        private static IUserMessageService _userMessageService;
-
         public static void SetUserMessageService(IUserMessageService userMessageService)
         {
-            _userMessageService = userMessageService;
-        }
-
-        public static IUserMessageService GetUserMessageService()
-        {
-            return _userMessageService;
+            UserMessageServiceContext.UserMessageServices.Add(userMessageService);
         }
     }
 }

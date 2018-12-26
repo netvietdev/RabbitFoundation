@@ -1,12 +1,15 @@
-﻿namespace Rabbit.Web.MvcNotification.Models
+﻿using System.Collections.Specialized;
+
+namespace Rabbit.Web.MvcNotification.Models
 {
-    public class DefaultUserMessageService : IUserMessageService
+    internal class DefaultUserMessageService : IUserMessageService
     {
-        public UserMessageViewModel BuildUserMessage(int msgType)
+        public UserMessageViewModel BuildUserMessage(int msgType, NameValueCollection queryString)
         {
             return new UserMessageViewModel()
             {
-                Title = "Unknown"
+                Title = "UserMessage",
+                Message = "Message is not defined yet"
             };
         }
     }

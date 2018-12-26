@@ -1,7 +1,12 @@
-﻿namespace Rabbit.Web.MvcNotification.Models
+﻿using System.Collections.Specialized;
+
+namespace Rabbit.Web.MvcNotification.Models
 {
     public interface IUserMessageService
     {
-        UserMessageViewModel BuildUserMessage(int msgType);
+        /// <summary>
+        /// Build a specific user message based on given parameters.
+        /// </summary>
+        UserMessageViewModel BuildUserMessage(int msgType, NameValueCollection queryString);
     }
 }
